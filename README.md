@@ -1,2 +1,2 @@
 # portfolio
-personal portfolio
+A showcase of my UX work and graphic design.
