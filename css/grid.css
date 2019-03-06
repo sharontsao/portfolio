@@ -10,73 +10,101 @@ body {
   background-color: #f9f9f9;
 
 }
+p, h2, h3, h4, h6, button {
+  font-family: Sofia Pro;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.3;
+}
 
 p {
   font-size: 1.6rem;
+  padding: 0 0 2rem 0;
 }
 
 h1{
   font-size: 3.2rem;
-  padding-bottom: 4rem;
+  font-family: Playfair Display;
+  font-weight: 700;
+  line-height: 26.4px;
+  padding: 4rem 0 3rem 0;
 }
 
 h2 {
   font-size: 2rem;
   line-height: 120%;
-  padding-bottom: 4rem;
+  padding: 0 0 1rem 0;
 }
 
 h3 {
-  font-size: 1.4rem;
   color: #D1000E;
-  padding-bottom: 2rem;
+  font-size: 1.4rem;
+  padding: 2rem 0;
 }
 
 h4 {
-  font-size: 2.7rem;
-  padding-bottom: 2rem;
+  color: #D1000E;
+  font-size: 2.4rem;
+  padding: 6rem 0 2rem 0;
+  font-weight: bold;
 }
+
+h5 {
+  font-size: 1.8rem;
+  font-family: Playfair Display;
+  font-weight: bold;
+  line-height: 26.4px;
+  padding: 2rem 0;
+}
+
+h6 {
+    font-size: 5rem;
+    color: #D1000E;
+    display:inline-block;
+    width: 10%;
+}
+
 
 .container {
   background-color: white;
-  display: grid;
-  grid-auto-rows: minmax(20px, auto);
-  grid-template-areas:
-    "navbar"
-    "hero"
-    "featured"
-    "footer";
 }
 
 section {
   background-color: #E0F3FA;
   color: #474747;
-  padding: 15rem 3rem;
+  padding: 4rem 3rem 4rem 3rem;
 }
 
 .navbar {
-  background-color: #E0F3FA;
   grid-area: navbar;
   padding: 2rem 3rem;
 }
 
-.navbar img {
+.alignleft {
+  float: left;
   max-width: 10%;
 }
 
+.alignright {
+  float: right;
+  max-width: 15%;
+}
+
 .hero {
-  background-color: #E0F3FA;
   grid-area: hero;
 }
 
 .hero img {
-  max-width: 40%;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 6.4rem;
+  max-width: 40%;
+  padding: 0 0 2rem 0;
 }
 
+.hero h1 {
+  padding-top: 10rem;
+}
 .hero h3 {
   text-align: center;
 }
@@ -85,24 +113,36 @@ section {
   background-color: #f9f9f9;
   grid-area: featured;
 
-
 }
 
 .featured h3 {
   color: #474747;
 }
 
+.featured img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90%;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  position: absolute;
+}
+
 button {
   border: 2px solid #D1000E;
+  background-color: inherit;
   color: #D1000E;
-  padding: 1rem 1.8rem;
-  text-align: center;
-  text-decoration: none;
   display: inline-block;
   font-size: 1.4rem;
-  margin: 4px 2px;
-  -webkit-transition-duration: 0.4s;
-  transition-duration: 0.4s;
+  margin: 0 0 1rem 0;
+  padding: 1rem;
+  text-align: center;
+  font-weight: 500;
+  width: 100%;
+
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
   cursor: pointer;
 }
 
@@ -111,12 +151,114 @@ button:hover {
   color: white;
 }
 
+.intro h1{
+  padding-top: 1rem;
+}
+.intro img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90%;
+  padding: 0 0 2rem 0;
+}
+.overview {
+  background-color: #f9f9f9;
+  grid-area: overview;
+}
+
+.problem {
+  grid-area: problem;
+}
+
+.solution {
+  background-color: #f9f9f9;
+  grid-area: solution;
+}
+
+.full-width {
+  width: 100vw;
+  height: auto;
+  position: relative;
+  margin-left: -50vw;
+  left: 50%;
+}
+
+.process {
+  grid-area: process;
+}
+
+.ch {
+  background-color: #f9f9f9;
+}
+
+.chnum {
+  padding: 0 0 2rem 0;
+}
+
+.chnum h1 {
+  font-size: 9.8rem;
+  color: #E0F3FA;
+  margin: auto calc(50% - 50vw);
+  display: inline-block;
+}
+
+.chnum h5 {
+  display: inline-block;
+}
+
+
+.usersurveys {
+  padding: 4rem 0;
+}
+
+span.circlenumber {
+  background: #D1000E;
+   border-radius: 1em;
+  -moz-border-radius: 4em;
+  -webkit-border-radius: 1em;
+  color: #f9f9f9;
+  display: inline-block;
+  font-weight: normal;
+  line-height: 1.6em;
+
+  text-align: center;
+  width: 1.6em;
+}
+
+.tasks p {
+  display: inline-block;
+}
+
+.sitemap img {
+  padding: 0 0 2rem 0;
+}
+
+.square, .square2, .square3, .square4 {
+  width: 70px;
+  height: 60px;
+  display: inline-block;
+  }
+
+.square {
+  background: #2A2671;
+}
+
+.square2 {
+  background: #5E67E8;
+}
+
+.square3 {
+  background: #C86DD7;
+}
+
+.square4 {
+  background: #979797;
+}
 .footer {
-  background-color: #E0F3FA;
   grid-area: footer;
 }
 
-div.contact {
+.contact {
   padding-bottom: 2rem;
 
 }
@@ -124,6 +266,89 @@ div.contact {
 .footer h3 {
   color: #474747;
 }
+
+.laptop img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90%;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  position: absolute;
+}
+
+.blob {
+  border-radius: 66% 34% 41% 59% / 57% 36% 64% 43% ;
+  background: #FF414D;
+  margin-left: auto;
+  margin-right: auto;
+  width: 46vh;
+  height: 41vh;
+  display: block;
+}
+
+/* .blob
+{
+  content: '';
+  display: block;
+  width: 40vh;
+  height: 40vh;
+  min-height: 200px;
+  min-width: 200px;
+  background: linear-gradient(
+                270deg,
+                #43E97B,
+                #38F9D7,
+                #E0C3FC,
+                #8EC5FC,
+                #4FACFE,
+                #00F2FE,
+                #A8EDEA,
+                #FED6E3
+              );
+  background-size: 1600% 1600%;
+  box-shadow: inset 0px -20px 100px rgba(255, 255, 255, 0.6);
+  transform-origin: 50% 50%;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  animation:
+    transform 50s ease-in-out infinite both alternate,
+    movement 40s ease-in-out infinite both,
+    shade 60s linear infinite both;
+}
+
+@keyframes transform
+{
+    0%,
+  100% { border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%; }
+   14% { border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%; }
+   28% { border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%; }
+   42% { border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%; }
+   56% { border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%; }
+   70% { border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%; }
+   84% { border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%; }
+}
+
+
+@keyframes movement
+{
+    0%,
+  100% { transform: none; }
+   50% { transform: translateY(20%) rotateY(10deg); }
+}
+
+
+@keyframes shade
+{
+    0%,
+  100% { background-position: 0% 50%; }
+   50% { background-position: 100% 50%; }
+}
+
+
+@use autoprefixer(
+  browsers: "> 3%"
+); */
 
 @media screen and (min-width: 768px) {
   .container {
