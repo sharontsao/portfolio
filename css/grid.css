@@ -4,6 +4,7 @@
 
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -11,9 +12,9 @@ body {
 
 }
 p, h2, h3, h4, h6, button {
-  font-family: Sofia Pro;
-  font-weight: normal;
+  font-family: 'Sofia Pro';
   font-style: normal;
+  font-weight: 400;
   line-height: 1.3;
 }
 
@@ -23,9 +24,9 @@ p {
 }
 
 h1{
+  font-family: 'Playfair Display';
   font-size: 3.2rem;
-  font-family: Playfair Display;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 26.4px;
   padding: 4rem 0 3rem 0;
 }
@@ -45,25 +46,24 @@ h3 {
 h4 {
   color: #D1000E;
   font-size: 2.4rem;
-  padding: 6rem 0 2rem 0;
   font-weight: bold;
+  padding: 6rem 0 2rem 0;
 }
 
 h5 {
+  font-family: 'Playfair Display';
   font-size: 1.8rem;
-  font-family: Playfair Display;
-  font-weight: bold;
+  font-weight: normal;
   line-height: 26.4px;
   padding: 2rem 0;
 }
 
 h6 {
-    font-size: 5rem;
     color: #D1000E;
+    font-size: 5rem;
     display:inline-block;
     width: 10%;
 }
-
 
 .container {
   background-color: white;
@@ -88,10 +88,19 @@ section {
 .alignright {
   float: right;
   max-width: 15%;
+  overflow: hidden;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0.5rem;
+  right: 1rem; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
 }
 
 .hero {
   grid-area: hero;
+}
+
+.face {
+  grid-area: face;
 }
 
 .hero img {
@@ -135,10 +144,10 @@ button {
   color: #D1000E;
   display: inline-block;
   font-size: 1.4rem;
+  font-weight: 500;
   margin: 0 0 1rem 0;
   padding: 1rem;
   text-align: center;
-  font-weight: 500;
   width: 100%;
 
   -webkit-transition-duration: 0.3s;
@@ -176,11 +185,11 @@ button:hover {
 }
 
 .full-width {
-  width: 100vw;
   height: auto;
-  position: relative;
-  margin-left: -50vw;
   left: 50%;
+  margin-left: -50vw;
+  position: relative;
+  width: 100vw;
 }
 
 .process {
@@ -196,10 +205,10 @@ button:hover {
 }
 
 .chnum h1 {
-  font-size: 9.8rem;
   color: #E0F3FA;
-  margin: auto calc(50% - 50vw);
   display: inline-block;
+  font-size: 9.8rem;
+  margin: auto calc(50% - 50vw);
 }
 
 .chnum h5 {
@@ -213,16 +222,16 @@ button:hover {
 
 span.circlenumber {
   background: #D1000E;
-   border-radius: 1em;
-  -moz-border-radius: 4em;
-  -webkit-border-radius: 1em;
+  border-radius: 1em;
   color: #f9f9f9;
   display: inline-block;
   font-weight: normal;
   line-height: 1.6em;
-
   text-align: center;
   width: 1.6em;
+
+  -moz-border-radius: 4em;
+  -webkit-border-radius: 1em;
 }
 
 .tasks p {
@@ -234,9 +243,9 @@ span.circlenumber {
 }
 
 .square, .square2, .square3, .square4 {
-  width: 70px;
-  height: 60px;
   display: inline-block;
+  height: 60px;
+  width: 70px;
   }
 
 .square {
@@ -258,11 +267,6 @@ span.circlenumber {
   grid-area: footer;
 }
 
-.contact {
-  padding-bottom: 2rem;
-
-}
-
 .footer h3 {
   color: #474747;
 }
@@ -280,11 +284,11 @@ span.circlenumber {
 .blob {
   border-radius: 66% 34% 41% 59% / 57% 36% 64% 43% ;
   background: #FF414D;
+  display: block;
+  height: 41vh;
   margin-left: auto;
   margin-right: auto;
   width: 46vh;
-  height: 41vh;
-  display: block;
 }
 
 /* .blob
@@ -350,6 +354,52 @@ span.circlenumber {
   browsers: "> 3%"
 ); */
 
+.center {
+  text-align: center;
+}
+
+.aboutme img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90%;
+  padding: 0 0 2rem 0;
+}
+
+.bold {
+  font-weight: 400;
+}
+
+.thescientist {
+  background-color: #f9f9f9;
+}
+
+.thescientist h4 {
+  font-weight: normal;
+}
+
+.theartist img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+
+}
+
+.theartist h4 {
+  font-weight: normal;
+}
+
+.thedesigner {
+  background-color: #f9f9f9;
+}
+
+.thedesigner h4 {
+    font-weight: normal;
+}
+
 @media screen and (min-width: 768px) {
   .container {
     background-color: yellow;
@@ -359,6 +409,11 @@ span.circlenumber {
 @media screen and (min-width: 1000px) {
   .container {
     background-color: pink;
-    width: 98rem;
-  }
+    width: 900rem;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns:  4fr 14fr;
+    grid-template-areas:
+    "hero face"
+    }
 }
