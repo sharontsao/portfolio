@@ -14,44 +14,69 @@
   <body>
     <div class="container">
       <section class="navbar">
-        <img class="alignleft" src="assets/images/pencil.png" alt="pencil logo">
-        <img class="alignright" src="assets/icons/hamburger.png" alt="hamburger menu">
-        <div style="clear: both;"></div>
-        <div class="menu">
-          <div class="projects"><h3>PROJECTS</h3></div>
-          <div class="about"><h3>ABOUT</h3></div>
-          <div class="contact1"><h3>CONTACT</h3></div>
-          <div class="resume"><h3>RESUME</h3></div>
+          <div class="fixmenu">
+            <div id="toggle">
+              <input type="checkbox">
+              <span></span>
+              <span></span>
+              <span></span>
+              <ul id="main-nav">
+                <li><a class="nav-link one animated-in" href="index.html">Home</a></li>
+                <li><a class="nav-link two animated-in" href="project.html">Work</a></li>
+                <li><a class="nav-link three animated-in" href="bio.html">About</a></li>
+                <li><a class="nav-link four animated-in" href="documents/STresume.pdf">Resume</a></li>
+              </ul>
+            </div>
+          </div>
+        <div class="nav1">
+          <a href="index.html"><div class="mylogo"><img class="alignleft" src="assets/images/pencil.svg" alt="pencil logo"></div></a>
+          <div class="menu">
+            <div class="work"><a href="project.html"><h3>WORK</h3></a></div>
+            <div class="about"><a href="bio.html"><h3>ABOUT</h3></a></div>
+            <div class="resume"><a href="documents/STresume.pdf"><h3>RESUME</h3></a></div>
         </div>
+      </div>
       </section>
       <!-- Hero unit  -->
       <section class="hero">
-
         <div class="contain"><div class="appear"><h1> Hi! I'm Sharon Tsao. </h1></div>
-        </div>
-        <h2> An Austin-based UX designer who's passionate about empowering the user. </h2>
+        <h2> An Austin-based <f>UX designer</f> who's passionate about empowering the user. </h2>
+      </div>
         <img class="face" src="assets/images/face.png" alt="face graphic">
-        <h3>FEATURED CASE STUDY</h3>
       </section>
-      <!-- Featured Case Study  -->
+      <!-- Selected Work  -->
       <section class="featured">
-          <h3>BRAND / UX / VISUAL</h3>
+          <h4>SELECTED WORK</h4>
+          <div class="feat">
+          <div class="case">
+          <h3>BRAND  |  UX  |  VISUAL</h3>
           <h1>SkySpace</h1>
           <h2>SaaS web-based and mobile cloud storage app for small businesses.</h2>
-          <button type="button" name="Case Study">VIEW CASE STUDY</button>
-          <div class="laptop"> <img src="assets/images/laptopmock.png" alt="laptop mockup"></div>
-          <div class="blob"></div>
+          <a href="project.html"><button type="button" name="Case Study">VIEW CASE STUDY</button></a>
+        </div>
+          <div class="lap">
+          <div class="laptop"> <img class='lptp' src="assets/images/laptopmock.png" alt="laptop mockup"></div>
+          <div class="blob"><img class="ellipse" src="assets/images/ellipse.svg" alt="red blob"></div>
+        </div>
+        </div>
       </section>
       <!-- Footer -->
       <section class="footer">
+          <div class="top">
           <h3>LET'S CONNECT!</h3>
-          <div class="contact">
-              <i class="fab fa-github"></i>
-              <i class="fab fa-linkedin"></i>
-              <i class="fab fa-instagram"></i>
-              <i class="fas fa-envelope"></i>
           </div>
-          <h3>© 2019 DESIGNED &AMP; CODED BY SHARON TSAO</h3>
+          <ul class="contact">
+              <li class="github"><a href="https://github.com/sharontsao"><i class="fab fa-github" aria-hidden="true"></i></a></li>
+              <li class="linkedin"><a href="https://www.linkedin.com/in/sharontsao/"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+              <li class="instagram"><a href="https://www.instagram.com/sh4rebear/"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+              <li class="email"><a href="mailto:tsao.sh4ron@gmail.com"><i class="fas fa-envelope" aria-hidden="true"></i></a></li>
+          </ul>
+          <div class="line">
+            <hr />
+          </div>
+          <div class="copyright">
+          <h3>© 2019 | DESIGNED &AMP; DEVELOPED BY SHARON TSAO</h3>
+        </div>
       </section>
     </div>
   </body>

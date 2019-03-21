@@ -14,12 +14,28 @@
   <body>
     <div class="container">
       <section class="navbar">
-          <img class="alignleft" src="assets/images/pencil.png" alt="pencil logo">
-          <div class="relative"><img class="alignright" src="assets/icons/hamburger.png" alt="hamburger menu"></div>
-          <div style="clear: both;"></div>
-          <div class="menu">
-            <h3>PROJECTS</h3>
+          <div class="fixmenu">
+            <div id="toggle">
+              <input type="checkbox">
+              <span></span>
+              <span></span>
+              <span></span>
+              <ul id="main-nav">
+                <li><a class="nav-link one animated-in" href="index.html">Home</a></li>
+                <li><a class="nav-link two animated-in" href="project.html">Work</a></li>
+                <li><a class="nav-link three animated-in" href="bio.html">About</a></li>
+                <li><a class="nav-link four animated-in" href="documents/STresume.pdf">Resume</a></li>
+              </ul>
+            </div>
           </div>
+        <div class="nav1">
+          <a href="index.html"><div class="mylogo"><img class="alignleft" src="assets/images/pencil.svg" alt="pencil logo"></div></a>
+          <div class="menu">
+            <div class="work"><a href="project.html"><h3>WORK</h3></a></div>
+            <div class="about"><a href="bio.html"><h3>ABOUT</h3></a></div>
+            <div class="resume"><a href="documents/STresume.pdf"><h3>RESUME</h3></a></div>
+        </div>
+      </div>
       </section>
       <!-- intro unit  -->
       <section class="intro">
@@ -267,14 +283,21 @@
 
       <!-- Footer -->
       <section class="footer">
+          <div class="top">
           <h3>LET'S CONNECT!</h3>
-          <div class="contact">
-              <i class="fab fa-github"></i>
-              <i class="fab fa-linkedin"></i>
-              <i class="fab fa-instagram"></i>
-              <i class="fas fa-envelope"></i>
           </div>
+          <ul class="contact">
+              <li class="github"><a href="https://github.com/sharontsao"><i class="fab fa-github" aria-hidden="true"></i></a></li>
+              <li class="linkedin"><a href="https://www.linkedin.com/in/sharontsao/"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+              <li class="instagram"><a href="https://www.instagram.com/sh4rebear/"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+              <li class="email"><a href="contact.html"><i class="fas fa-envelope" aria-hidden="true"></i></a></li>
+          </ul>
+          <div class="line">
+            <hr />
+          </div>
+          <div class="copyright">
           <h3>© 2019 DESIGNED &AMP; CODED BY SHARON TSAO</h3>
+        </div>
       </section>
     </div>
   </body>
