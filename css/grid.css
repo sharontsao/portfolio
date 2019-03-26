@@ -394,6 +394,7 @@ ul#main-nav li {
 
 .hero h1 {
   padding: 5rem 0 0 0;
+	font-weight: 600;
 }
 
 .hero h2 {
@@ -1103,6 +1104,10 @@ span.circlenumber {
     height: auto;
     /* width: 34%; */
   }
+
+	.hero h1 {
+		font-weight: 400;
+	}
 
   .hero h3 {
     padding: 0 0 0 0;
