@@ -853,7 +853,8 @@ span.circlenumber {
 
 .line hr {
   color: #D1000E;
-  height: .4rem;
+	background-color: #D1000E;
+  height: .2rem;
   width: 100%;
 }
 
@@ -1097,7 +1098,8 @@ span.circlenumber {
 
   .line hr {
     color: #D1000E;
-    height: .1rem;
+		background-color: #D1000E;
+    height: .2rem;
     width: 70%;
   }
 
