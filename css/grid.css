@@ -852,10 +852,10 @@ span.circlenumber {
 }
 
 .line hr {
-  color: #D1000E;
-	background-color: #D1000E;
-  height: .2rem;
   width: 100%;
+	background-size: 1px 1px;
+	color: #d1000e;
+	text-decoration: none;
 }
 
 .line {
@@ -1097,10 +1097,10 @@ span.circlenumber {
 
 
   .line hr {
-    color: #D1000E;
-		background-color: #D1000E;
-    height: .2rem;
-    width: 70%;
+			background-size: 1px 1px;
+			color: #d1000e;
+			text-decoration: none;
+    width: 50%;
   }
 
   .featured {
@@ -1127,13 +1127,13 @@ span.circlenumber {
 
   .featured h4 {
     left: 50%;
-	margin-left: -50vw;
-	margin-right: -50vw;
-	max-width: 100vw;
-	padding: 0 0 6rem 8rem;
-	position: relative;
-	right: 50%;
-	width: 100vw;
+		margin-left: -50vw;
+		margin-right: -50vw;
+		max-width: 100vw;
+		padding: 0 0 6rem 8rem;
+		position: relative;
+		right: 50%;
+		width: 100vw;
   }
 
 
@@ -1420,6 +1420,13 @@ span.circlenumber {
     .featured {
       padding-top: 8rem;
     }
+
+		.feat {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			width: 1100px;
+		}
     .featured h4 {
       padding: 0 0 6rem 12rem;
     }
@@ -1430,10 +1437,7 @@ span.circlenumber {
 
     .feat {
       display: grid;
-      /* text-align: center; */
-      /* grip-gap: 1rem; */
-      /* grid-area: 4/1/4/1; */
-      grid-template-columns: 1fr 2fr;
+      grid-template-columns: 1fr 1fr;
       grid-template-areas:
       "case blob";
     }
@@ -1444,6 +1448,7 @@ span.circlenumber {
 		}
     .case {
       grid-area: case;
+			width:
     }
 
     .blob {
