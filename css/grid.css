@@ -13,9 +13,8 @@ body {
 
 }
 p, h2, h3, h4, h6, button {
-  font-family: 'Sofia Pro';
+  font-family: 'sofiapro-regular';
   font-style: normal;
-  font-weight: 400;
   line-height: 1.4;
 }
 
@@ -66,9 +65,9 @@ h6 {
     font-size: 4.5rem;
 }
 
-
 strong {
   font-weight: bold;
+	font-family: 'sofiapro-bold';
 }
 .container {
   background-color: #f9f9f9;
@@ -82,6 +81,79 @@ section {
   color: #474747;
   padding: 4rem 3rem 4rem 3rem;
 }
+
+/* ANIMATIONS */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animated.delay-1s {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
+/* END ANIMATIONS */
 
 .alignleft {
   float: left;
@@ -203,7 +275,7 @@ ul#main-nav li {
   text-align: center;
   /* position: relative; */
   z-index: 2500;
-  font-family: 'Sofia Pro';
+  font-family: 'sofiapro-regular';
   font-size: 4rem;
   padding-bottom: 6rem;
   /* padding-right: 4rem; */
@@ -221,7 +293,6 @@ ul#main-nav li {
  .fixmenu li {
    /* padding: 0 0 0 4rem; */
  }
-
 
 }
 
@@ -606,7 +677,7 @@ span.circlenumber {
   border-radius: 1em;
   color: #f9f9f9;
   display: inline-block;
-  font-family: 'Sofia Pro';
+  font-family: 'sofiapro-regular';
   font-size: 1.6rem;
   font-style: normal;
   font-weight: normal;
@@ -659,27 +730,8 @@ span.circlenumber {
 }
 
 
-/* .usability ul {
-  list-style-type: none;
-  list-style-position: outside;
-  font-family: 'Sofia Pro';
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.3;
-  font-size: 1.6rem;
-}
-
-.usability li::before {
-  color: #D1000E;
-  content: "\2022";
-  font-size: 1.5em;
-  padding: 0 0.8rem 1rem 1rem;
-  top: 0em;
-  list-style-position: outside;
-} */
-
 .usability ul {
-  font-family: 'Sofia Pro';
+  font-family: 'sofiapro-regular';
   font-size: 1.6rem;
   font-style: normal;
   font-weight: 400;
@@ -691,7 +743,6 @@ span.circlenumber {
 .usability ul li::before {
   color: #D1000E;
   content: "\2022";
-  font-weight: bold;
   display: inline-block;
   font-weight: bold;
   margin-left: -1em;
@@ -724,7 +775,7 @@ span.circlenumber {
 }
 
 .hifi ul {
-  font-family: 'Sofia Pro';
+  font-family: 'sofiapro-regular';
   font-size: 1.6rem;
   font-style: normal;
   font-weight: 400;
@@ -882,10 +933,6 @@ span.circlenumber {
 
 .center {
   text-align: center;
-}
-
-.bold {
-  font-weight: 400;
 }
 
 .thescientist {
