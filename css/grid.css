@@ -648,30 +648,6 @@ width: 20rem;
   text-align: center;
 }
 
-/*
-.wrap h6 {
-  display: inline-block;
-  padding: 0 0 0 2rem;
-}
-
-.wrap p {
-  display: inline-block;
-  overflow-wrap: break-word;
-  width: 60%;
-  padding: 0 0 0 2rem;
-} */
-/*
-.wrap2 h6 {
-  display: inline-block;
-  padding: 0 1rem 0 2rem;
-}
-
-.wrap2 p {
-  display: inline-block;
-  width: 80%;
-  padding: 0 2rem 0 2rem;
-} */
-
 span.circlenumber {
   background: #D1000E;
   border-radius: 1em;
@@ -710,7 +686,7 @@ span.circlenumber {
   display: inline-block;
   height: 60px;
   margin: 2rem 0 1rem 0;
-  width: 156px;
+  width: 48%;
   }
 
 .square {
@@ -876,7 +852,7 @@ span.circlenumber {
 
 .line hr {
   color: #D1000E;
-  height: .1rem;
+  height: .4rem;
   width: 100%;
 }
 
@@ -1268,11 +1244,11 @@ span.circlenumber {
 		padding: 0;
 	}
 	.companal .flex-container {
-		width: 388px;
+		width: 420px;
 	}
 
 	.six {
-		width: 31rem;
+		width: 35rem;
 	}
 
 	.interviews {
@@ -1287,7 +1263,6 @@ span.circlenumber {
 		/* display: block; */
 		margin-left: 50%;
 		transform: translateX(-50%);
-
 	}
 
 	.userstories {
@@ -1315,7 +1290,7 @@ span.circlenumber {
 	}
 
 	.square, .square2, .square3, .square4 {
-	  width: 220px;
+	  width: 48%;
 	  }
 
 	.wireframes {
@@ -1360,8 +1335,11 @@ span.circlenumber {
     padding: 2rem 0 2rem 0;
   }
 
-  .aboutme, .thescientist, .theartist, .thedesigner {
-    padding: 6rem 19rem 6rem 19rem;
+  .aboutme1, .thescientist1, .theartist1, .thedesigner1 {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 450px;
   }
 
 	.aboutme {
@@ -1454,6 +1432,7 @@ span.circlenumber {
 		.feat button {
 			margin-left: 0;
 			width: 100%;
+			max-width: 400px;
 		}
     .case {
       grid-area: case;
@@ -1461,7 +1440,8 @@ span.circlenumber {
 
     .blob {
       grid-area: blob;
-      padding: 2rem 0 12rem 10rem;
+      padding: 2rem 0 12rem 0;
+			justify-self: end;
     }
 
 		.blob img{
@@ -1482,8 +1462,11 @@ span.circlenumber {
 				text-decoration: none;
 			}
 
-		.problem {
-			padding: 6rem 19rem 6rem 19rem;
+		.prob {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			width: 800px;
 		}
 
 		.introd img {
@@ -1529,6 +1512,64 @@ span.circlenumber {
 		.users .flex-container {
 			width: 500px;
 		}
+
+		.compint {
+			display: grid;
+      grid-column-gap: 1rem;
+      grid-template-areas:
+      "comp interviews";
+      grid-template-columns: repeat(2, 1fr);
+		}
+
+		.interviews .flex-container1{
+			margin-left: 0;
+			transform: translateX(0%);
+		}
+		.competitiveanalysis {
+			grid-area: comp;
+			width: 435px;
+		}
+
+		.competitiveanalysis button {
+			width: 80%;
+		}
+
+		.interviews {
+			grid-area: interviews;
+		}
+
+		.compint button {
+			margin-left: 0;
+		}
+
+		.interviews .flex-container1 {
+		  width: 425px;
+		}
+
+		.jacob1 {
+		  width: 190px;
+		}
+
+		.stacy1 {
+		  width: 190px;
+		}
+
+		.seven img {
+		  display: block;
+		  margin-left: auto;
+		  margin-right: auto;
+		  padding: 0 0 1rem 0;
+		  width: 10rem;
+
+		}
+		.eight p {
+		  padding: 0;
+		  text-align: center;
+		}
+
+		.square, .square2, .square3, .square4 {
+		  width: 49%;
+		  }
 		.aboutme {
 			padding: 14rem 44rem 6rem 44rem;
 		}
@@ -1544,8 +1585,12 @@ span.circlenumber {
       margin-bottom: 1rem;
     }
 
-		.thescientist, .theartist, .thedesigner {
-      padding: 6rem 44rem 6rem 44rem;
-    }
+		.aboutme1, .thescientist1, .theartist1, .thedesigner1 {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			width: 500px;
+	  }
+
 
 }
