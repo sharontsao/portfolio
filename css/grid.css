@@ -1158,7 +1158,7 @@ span.circlenumber {
 		margin-left: auto;
 		margin-right: auto;
 		width: 100%;
-		margin-top: 5rem;
+		margin-top: 6rem;
   }
 
   .featured h1, h2, h3 {
@@ -1514,7 +1514,7 @@ span.circlenumber {
 
     .blob {
       grid-area: blob;
-      padding: 0 0 12rem 0;
+      padding: 4rem 0 12rem 0;
 			justify-self: end;
     }
 
