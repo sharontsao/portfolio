@@ -10,8 +10,15 @@ html {
 
 body {
   background-color: #f9f9f9;
-
 }
+
+.container {
+  background-color: #f9f9f9;
+  margin: auto;
+  position: relative;
+	overflow-x: hidden;
+}
+
 p, h2, h3, h4, h6, button {
   font-family: 'sofiapro-regular';
   font-style: normal;
@@ -68,12 +75,6 @@ h6 {
 strong {
   font-weight: bold;
 	font-family: 'sofiapro-bold';
-}
-.container {
-  background-color: #f9f9f9;
-  margin: auto;
-  position: relative;
-	overflow-x: hidden;
 }
 
 section {
@@ -152,7 +153,50 @@ section {
   -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown;
 }
+.scroll {
+  padding: 8px;
+  text-align: center;
+  width: 115px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
+#scroll a {
+  color: #474747;
+	text-decoration: none;
+}
+
+#scroll i {
+  font-size: 2rem;
+}
+
+#scroll a:hover {
+  color: #d1000e;
+	text-decoration: none;
+}
+
+#scroll h3:hover {
+  color: #d1000e;
+}
+
+.pulse {
+    animation-name: pulse_animation;
+    animation-duration: 4000ms;
+    transform-origin:70% 70%;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes pulse_animation {
+    0% { transform: scale(1); }
+    30% { transform: scale(1); }
+    40% { transform: scale(1.08); }
+    50% { transform: scale(1); }
+    60% { transform: scale(1); }
+    70% { transform: scale(1.05); }
+    80% { transform: scale(1); }
+    100% { transform: scale(1); }
+}
 /* END ANIMATIONS */
 
 .alignleft {
@@ -295,8 +339,6 @@ ul#main-nav li {
    /* padding: 0 0 0 4rem; */
  }
 
-}
-
 .alignright {
   float: right;
   max-width: 50px;
@@ -308,19 +350,9 @@ ul#main-nav li {
 }
 
 .hero {
-  grid-area: hero;
   border-bottom-left-radius: 50% 10%;
   border-bottom-right-radius: 50% 5%;
 }
-
-.hero a:hover {
-  opacity: 0.6;
-}
-
-/* .contain {
-	display: flex;
-
-} */
 
 .appear h1 {
   animation: up 600ms linear forwards;
@@ -405,7 +437,22 @@ ul#main-nav li {
 f {
     color: #D1000E;
 }
+.hero1 {
+		padding-bottom: 2rem;
+}
 
+.see {
+	display: block;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	padding: 4rem 0 -1rem 0;
+}
+
+.see h3 {
+	color: #474747;
+	font-size: 1.4rem;
+}
 .featured {
   background-color: #f9f9f9;
   grid-area: featured;
@@ -427,12 +474,12 @@ f {
 
 .featured h4 {
   padding-bottom: 6rem;
-  font-size: 2rem;
+  font-size: 2.2rem;
 }
 
 .blob img{
 	width: 100%;
-	max-width: 500px;
+	max-width: 575px;
 }
 
 button {
@@ -531,7 +578,7 @@ background-size: 2px 7px;
 }
 
 .chapter {
-  padding: 3rem 0 6rem 0;
+  padding: 4rem 0 2rem 0;
 }
 
 .ch {
@@ -672,7 +719,7 @@ span.circlenumber {
 
 
 .sitemap img {
-  padding: 0 0 2rem 0;
+  padding: 0 0 4rem 0;
 }
 
 .tone {
@@ -852,10 +899,11 @@ span.circlenumber {
 }
 
 .line hr {
-  width: 100%;
+	background-color: #d1000e;
 	background-size: 1px 1px;
 	color: #d1000e;
 	text-decoration: none;
+	width: 100%;
 }
 
 .line {
@@ -978,6 +1026,10 @@ span.circlenumber {
     padding: 4rem 8rem 6rem 8rem;
   }
 
+	h4 {
+	  font-size: 2.8rem;
+	}
+
   .alignright {
     display: none;
   }
@@ -1063,7 +1115,7 @@ span.circlenumber {
   }
 
 	.hero {
-		padding-top: 20rem;
+		padding-top: 18rem;
 	}
 
 	.hero img {
@@ -1094,17 +1146,24 @@ span.circlenumber {
   .hero h3 {
     padding: 0 0 0 0;
   }
-
+	.scroll {
+		margin-top: 4rem;
+	}
 
   .line hr {
 			background-size: 1px 1px;
+			background-color: #d1000e;
 			color: #d1000e;
 			text-decoration: none;
-    width: 50%;
+    	width: 50%;
   }
 
   .featured {
-    padding: 6rem 19rem 6rem 19rem;
+    display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 92%;
+		margin-top: 6rem;
   }
 
   .featured h1, h2, h3 {
@@ -1194,6 +1253,14 @@ span.circlenumber {
 	  width: 40rem;
 	}
 
+
+
+	.full-width {
+		display: block;
+		margin: 0 0 0 50%;
+		transform: translateX(-50%);
+	}
+
 	.solution {
 		display: block;
 		margin-left: auto;
@@ -1201,11 +1268,7 @@ span.circlenumber {
 		width: 450px;
 		padding: 6rem 0;
 	}
-	.full-width {
-		display: block;
-		margin-left: 50%;
-		transform: translateX(-50%);
-	}
+
 
 	.process1 {
 		display: block;
@@ -1280,6 +1343,7 @@ span.circlenumber {
 		width: 450px;
 		padding: 2rem 0;
 	}
+
 
 	.brandstory {
 		display: block;
@@ -1378,7 +1442,7 @@ span.circlenumber {
 			}
 
     section {
-      padding: 6rem 8rem 6rem 12rem;
+      padding: 6rem 8rem 6rem 8rem;
     }
 
     .menu h3 {
@@ -1386,17 +1450,20 @@ span.circlenumber {
       font-size: 1.6rem;
   	}
 
-    .hero {
+    .hero1 {
       display: grid;
-			grid-area: hero;
+			/* grid-area: hero; */
       /* text-align: center; */
       /* grip-gap: 1rem; */
       /* grid-area: 4/1/4/1; */
       grid-template-columns: 2fr 1fr;
       grid-template-areas:
       "contain face";
-			padding: 20rem 19rem;
-
+			margin-left: auto;
+			margin-right: auto;
+			width: 84%;
+			padding-bottom: 7rem;
+			padding-top: 2rem;
     }
     .contain {
       grid-area: contain;
@@ -1425,7 +1492,7 @@ span.circlenumber {
 			display: block;
 			margin-left: auto;
 			margin-right: auto;
-			width: 1100px;
+			width: 92%;
 		}
     .featured h4 {
       padding: 0 0 6rem 12rem;
@@ -1437,7 +1504,7 @@ span.circlenumber {
 
     .feat {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 2fr;
       grid-template-areas:
       "case blob";
     }
@@ -1448,7 +1515,6 @@ span.circlenumber {
 		}
     .case {
       grid-area: case;
-			width:
     }
 
     .blob {
@@ -1458,7 +1524,7 @@ span.circlenumber {
     }
 
 		.blob img{
-			margin: 0 0 0 4rem;
+			margin: 0 0 0 6rem;
 		}
 
 		.caseblob img {
@@ -1479,7 +1545,7 @@ span.circlenumber {
 			display: block;
 			margin-left: auto;
 			margin-right: auto;
-			width: 800px;
+			width: 720px;
 		}
 
 		.introd img {
@@ -1495,7 +1561,8 @@ span.circlenumber {
 		}
 
 		.full-width {
-				width: 90vh;
+				width: 85vh;
+				padding: 2rem 0 3rem 0;
 			}
 
     .usersurveys, .competitiveanalysis, .interviews, .userstories, .brandstory, .toneofvoice, .wireframes, .usability, .hifi, .learning {
@@ -1557,6 +1624,10 @@ span.circlenumber {
 
 		.interviews .flex-container1 {
 		  width: 425px;
+		}
+
+		.interviews button {
+			margin-top: 2.3rem;
 		}
 
 		.jacob1 {
