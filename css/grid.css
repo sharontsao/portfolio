@@ -427,6 +427,8 @@ ul#main-nav li {
 
 .hero h1 {
   padding: 3rem 0 0 0;
+	font-weight: 700;
+	font-size: 3.2rem;
 }
 
 .hero h2 {
