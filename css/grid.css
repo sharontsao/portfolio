@@ -1452,10 +1452,9 @@ span.circlenumber {
       grid-template-columns: 2fr 1fr;
       grid-template-areas:
       "contain face";
-			/* margin-left: auto;
-			margin-right: auto; */
-			width: 100%;
-			padding: 7rem 9rem 2rem 9rem;
+			margin-left: auto;
+			margin-right: auto;
+			width: 86%;
 
     }
 
@@ -1481,14 +1480,14 @@ span.circlenumber {
     }
 
     .featured {
-      padding-top: 8rem;
+      padding-top: 0;
     }
 
 		.feat {
 			display: block;
 			margin-left: auto;
 			margin-right: auto;
-			width: 92%;
+			width: 86%;
 		}
     .featured h4 {
       padding: 0 0 6rem 12rem;
@@ -1515,7 +1514,7 @@ span.circlenumber {
 
     .blob {
       grid-area: blob;
-      padding: 2rem 0 12rem 0;
+      padding: 0 0 12rem 0;
 			justify-self: end;
     }
 
