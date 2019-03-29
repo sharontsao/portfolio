@@ -32,7 +32,7 @@ p {
 
 h1{
   font-family: 'Playfair Display';
-  font-size: 3.4rem;
+  font-size: 3.45rem;
   font-weight: 400;
   line-height: 26.4px;
   padding: 4rem 0 3rem 0;
@@ -426,7 +426,6 @@ ul#main-nav li {
 
 .hero h1 {
   padding: 3rem 0 0 0;
-	font-size: 3.2rem;
 }
 
 .hero h2 {
