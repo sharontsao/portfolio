@@ -421,8 +421,7 @@ ul#main-nav li {
   margin-left: auto;
   margin-right: auto;
   width: 12rem;
-  padding: 0 0 0 0;
-  /* width: 35%; */
+  padding: 0;
 }
 
 .hero h1 {
@@ -1119,10 +1118,6 @@ span.circlenumber {
 		padding-top: 18rem;
 	}
 
-	.hero img {
-		width: 14rem;
-	}
-
   .hero h1 {
     padding: 5rem 0 0 0;
     font-size: 4rem;
@@ -1134,10 +1129,9 @@ span.circlenumber {
 
   }
 
-  .face img {
-    width: 15rem;
+  .hero img {
+    width: 20rem;
     height: auto;
-    /* width: 34%; */
   }
 
 	.hero h1 {
@@ -1163,8 +1157,8 @@ span.circlenumber {
     display: block;
 		margin-left: auto;
 		margin-right: auto;
-		width: 92%;
-		margin-top: 6rem;
+		width: 100%;
+		margin-top: 10rem;
   }
 
   .featured h1, h2, h3 {
@@ -1196,7 +1190,6 @@ span.circlenumber {
 		width: 100vw;
   }
 
-
 	.intro {
 	  padding: 12rem 0 6rem 0;
 	  }
@@ -1225,8 +1218,6 @@ span.circlenumber {
 
 	.container button {
 		 display: block;
-		 margin-left: auto;
-		 margin-right: auto;
 		 width: 65%;
 		 max-width: 700px;
 	 }
@@ -1236,7 +1227,7 @@ span.circlenumber {
 	 }
 
 	 .feat button {
-		 width: 100%;
+		 width: 60%;
 	 }
 
 	.overview {
@@ -1436,7 +1427,7 @@ span.circlenumber {
 		overflow-x: hidden;
     }
 
-	button {
+		button {
 			  display: block;
 			  margin-left: auto;
 			  margin-right: auto;
@@ -1461,15 +1452,19 @@ span.circlenumber {
       grid-template-columns: 2fr 1fr;
       grid-template-areas:
       "contain face";
-			margin-left: auto;
-			margin-right: auto;
-			width: 84%;
-			padding-bottom: 7rem;
-			padding-top: 2rem;
+			/* margin-left: auto;
+			margin-right: auto; */
+			width: 100%;
+			padding: 7rem 9rem 2rem 9rem;
+
     }
-    .contain {
-      grid-area: contain;
-    }
+
+		.container button {
+			 display: block;
+			 margin-left: auto;
+			 margin-right: auto;
+  }
+
 
     .face {
       grid-area: face;
