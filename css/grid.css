@@ -368,7 +368,7 @@ ul#main-nav li {
 
 	&::before,
 	&::after {
-    background-color: rgba(0,0,0,0.2);
+    /* background-color: rgba(0,0,0,0.2); */
     content: '';
     position: absolute;
 		height: 1px;
