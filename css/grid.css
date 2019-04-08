@@ -36,6 +36,7 @@ h1{
   font-weight: 400;
   line-height: 26.4px;
   padding: 4rem 0 3rem 0;
+	text-shadow: none;
 }
 
 h2 {
@@ -361,7 +362,7 @@ ul#main-nav li {
   line-height: 1;
 	margin: 0;
   position: relative;
-  text-shadow: 0px 1px 1px rgba(255,255,255,1);
+  /* text-shadow: 0px 0px px rgba(255,255,255,1); */
   transform: translateY(6rem);
   z-index: 1;
 
@@ -429,6 +430,7 @@ ul#main-nav li {
 .hero h1 {
   padding: 3rem 0 0 0;
 	font-weight: 700;
+	text-shadow: none;
 }
 
 .hero h2 {
@@ -468,6 +470,7 @@ f {
 
 .featured h1 {
   padding: 0 0 3rem 0;
+	text-shadow: none;
 }
 
 .featured h3 {
@@ -525,6 +528,7 @@ button:hover {
 }
 .intro h1{
   padding-top: 3rem;
+	text-shadow: none;
 }
 .intro img {
   display: block;
@@ -595,6 +599,7 @@ background-size: 2px 7px;
 .flex-container h1 {
   color: #E0F3FA;
   font-size: 11rem;
+	text-shadow: none;
 }
 
 .comp-icon {
@@ -618,6 +623,7 @@ background-size: 2px 7px;
 .flex-container h1, h5 {
   padding: 0;
 	font-weight: 700;
+	text-shadow: none;
 }
 
 .a {
@@ -1158,6 +1164,7 @@ span.circlenumber {
   .hero h1 {
     padding: 5rem 0 0 0;
     font-size: 4rem;
+		text-shadow: none;
   }
 
   .hero h2 {
@@ -1173,6 +1180,7 @@ span.circlenumber {
 
 	.hero h1 {
 		font-weight: 400;
+		text-shadow: none;
 	}
 
   .hero h3 {
@@ -1205,6 +1213,7 @@ span.circlenumber {
 
   .featured h1 {
     font-size:  3.8rem;
+		text-shadow: none;
   }
 
   .featured h2 {
@@ -1515,6 +1524,7 @@ span.circlenumber {
 
     .hero h1 {
       font-size: 5.4rem;
+			text-shadow: none;
     }
 
     .hero img {
