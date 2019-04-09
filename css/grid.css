@@ -934,10 +934,9 @@ span.circlenumber {
   grid-area: email;
 }
 
-.line hr {
-	background-color: #d1000e;
-	background-size: 1px 1px;
-	color: #d1000e;
+hr {
+	border: 0;
+	border-bottom: 2px solid #d1000e;
 	text-decoration: none;
 	width: 100%;
 }
