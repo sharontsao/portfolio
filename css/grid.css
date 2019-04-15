@@ -875,7 +875,55 @@ span.circlenumber {
 	transform: translateX(-50%);
 }
 
-.footer {
+
+footer#footer1 {
+  background-color: #E0F3FA;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer#footer1 ul.contact {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 2rem auto;
+}
+
+i.fab, i.fas {
+  font-size: 2.4rem;
+  color: #D1000E;
+}
+
+footer#footer1 div.copyright {
+  display: block;
+  width: 100%;
+  padding: 0 0 0 0;
+}
+
+footer#footer1 div.copyright p {
+  text-align: center;
+  padding-bottom: 1.5rem;
+  width: 98%;
+  font-size: 1.2rem;
+  margin: -0.5rem auto 0 auto;
+  font-family: "sofiapro-regular";
+}
+
+.contact a {
+  color: #D1000E;
+}
+
+.contact a:hover {
+  opacity: 0.6;
+}
+
+
+/* .footer {
   border-top-left-radius: 50% 5%;
   border-top-right-radius: 50% 10%;
   display: grid;
@@ -953,10 +1001,9 @@ hr {
   /* min-height: 6.4rem; */
 }
 
-.copyright h3 {
+/* .copyright h3 {
     font-size: 1.3rem;
-}
-
+} */
 
 .aboutme {
   border-bottom-left-radius: 50% 5%;
@@ -1432,13 +1479,13 @@ hr {
 		width: 450px;
 		padding: 2rem 0;
 	}
-  .top {
+  /* .top {
     padding: 4rem 0 1rem 0;
-  }
+  } */
 
-  .copyright {
+  /* .copyright {
     padding: 2rem 0 0 0;
-  }
+  } */
 
   .me img {
     max-width: 50%;
@@ -1466,6 +1513,14 @@ hr {
 
 	.end2 img {
 		display: none;
+	}
+
+	footer#footer1 {
+		padding: 2rem;
+	}
+
+	footer#footer1 ul.contact {
+	  width: 40%
 	}
 
 }
@@ -1708,7 +1763,7 @@ hr {
 		.aboutme {
 			padding: 14rem 44rem 6rem 44rem;
 		}
-
+/*
     .contact{
       font-size: 4.5rem;
       display: grid;
@@ -1718,7 +1773,7 @@ hr {
       "github linkedin instagram email";
       grid-template-columns: repeat(4, 1fr);
       margin-bottom: 1rem;
-    }
+    } */
 
 		.aboutme1, .thescientist1, .theartist1, .thedesigner1 {
 			display: block;
@@ -1763,5 +1818,49 @@ hr {
 		.blob1 svg {
 			position: absolute;
 		}
+
+		footer#footer1{
+    display: flex;
+    flex-direction: row-reverse;
+    /* align-items: center; */
+    justify-content: space-between;
+    padding: 4.5rem 0 0 0;
+    background-color: #E0F3FA;
+    height: 10rem;
+  }
+
+  footer#footer1 ul.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    margin: -5rem 1% 0 0 ;
+    padding: 0;
+  }
+
+  ul.contact li {
+    margin: 0 0 0 8%;
+  }
+
+  footer#footer1 ul.contact i.fab, footer#footer1 ul.contact i.fas{
+    font-size: 2.8rem;
+    padding-right: 0.6rem;
+    color: #d1000e;
+  }
+
+  footer#footer1 div.copyright {
+    text-align: left;
+		justify-content: none;
+		align-items: none;
+		width: 40%;
+    /* width: auto; */
+    margin: -5rem 0 0 0;
+  }
+
+  footer#footer1 div.copyright p {
+    padding: 0;
+    font-size: 1.6rem;
+    font-family: "sofiapro-regular";
+   }
 
 }
