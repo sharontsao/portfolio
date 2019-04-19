@@ -515,6 +515,11 @@ button {
   color: white;
 	}
 
+	.notsuoh img{
+		width: 100%;
+		max-width: 575px;
+		padding-bottom: 4rem;
+	}
 
 .intro button {
   margin: 0 0 1rem 0;
@@ -533,6 +538,7 @@ button {
 	"nto"
 	"crush"
 }
+
 .nto {
 grid-area: nto;
 }
@@ -1614,16 +1620,6 @@ hr {
       padding: 0;
     }
 
-    .featured {
-      padding-top: 0;
-    }
-
-		.feat {
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-			width: 86%;
-		}
     .featured h4 {
       padding: 0 0 6rem 12rem;
     }
@@ -1638,54 +1634,26 @@ hr {
 
     .feat {
       display: grid;
-      grid-template-columns: 1fr 2fr;
+      grid-template-columns: 1fr 1fr;
       grid-template-areas:
       "case blob-wrapper";
+			margin-left: auto;
+			margin-right: auto;
+			width: 86%;
     }
 		.feat button {
 			margin-left: 0;
 			width: 100%;
 			max-width: 400px;
 		}
-		.gallery {
-			display: grid;
-			grid-gap: 10px;
-			grid-template-columns: repeat(2, 1fr);
-			grid-template-rows: auto;
-			grid-template-areas:
-			"nto clutch"
-		}
-
-			.nto {
-			grid-area: nto;
-		}
-
-			.clutch {
-				grid-area: clutch;
-			}
-		.nto img{
-				width: 100%;
-				height: 100%;
-				object-fit:cover;
-			}
-
-		.clutch img {
-			width: 100%;
-			height: 100%;
-			object-fit:cover;
-		}
-		@media (min-width: 480px) {
-			&:first-child {
-				grid-area: 1 / 1 / span 2 / span 2;
-			}
-			&:nth-child(3n) {
-				grid-column: span 2;
-			}
-		}
 
     .case {
       grid-area: case;
     }
+
+		.case h2 {
+			width: 500px;
+		}
 
     .blob-wrapper {
       grid-area: blob-wrapper;
@@ -1697,6 +1665,42 @@ hr {
 		.caseblob img {
 			width: 90%;
 		}
+		.feat2 {
+			padding-top: 10rem;
+			margin-left: auto;
+			margin-right: auto;
+			width: 86%;
+		}
+
+		.feat2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+      "blob-wrapper1 graphic";
+    }
+		.graphic button {
+			margin-left: 0;
+			width: 100%;
+			max-width: 400px;
+		}
+
+		.blob-wrapper1 {
+			grid-area: blob-wrapper1;
+		}
+
+    .graphic {
+      grid-area: graphic;
+			padding-left: 8rem;
+    }
+
+		.notsuoh {
+			display: none;
+		}
+
+		.nto img {
+			width: 525px;
+		}
+
 		.intro button {
 			  display: block;
 			  margin-left: auto;
@@ -1872,14 +1876,32 @@ hr {
 		 fill: #FF868D;
 		}
 		.lapt img {
-			width: 600px;
+			width: 650px;
 			position: relative;
 		}
 
 		.blob1 svg {
 			position: absolute;
 		}
+		.blob3 .nto,
+		.blob3 svg,
+		.blob1:hover svg path {
+		transition: .5s all ease-in-out;
+		}
 
+		.blob3:hover .nto {
+			transform: translate(-2vw, -2vw);
+		}
+
+		.blob3:hover svg {
+			transition-delay: 0.2s;
+			transform: translate(-2vw, 2vw);
+		}
+
+		.blob3:hover svg path {
+		 transition-delay: 0.4s;
+		 fill: #FF868D;
+		}
 		footer#footer1{
     display: flex;
     flex-direction: row-reverse;
