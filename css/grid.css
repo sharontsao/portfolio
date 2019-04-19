@@ -521,36 +521,16 @@ button {
 		padding-bottom: 4rem;
 	}
 
+	.nto img {
+		display: none;
+	}
+
 .intro button {
   margin: 0 0 1rem 0;
 }
 
 .featured button {
   margin: 3rem 0 6rem 0;
-}
-
-.gallery {
-	display: grid;
-	grid-gap: 20px;
-	grid-template-columns: auto;
-	grid-template-rows: repeat(2, 1fr);
-	grid-template-areas:
-	"nto"
-	"crush"
-}
-
-.nto {
-grid-area: nto;
-}
-
-.crush {
-	grid-area: crush;
-}
-
-.gallery img {
-	height: 100%;
-	width: 100%;
-	object-fit: cover;
 }
 
 .intro {
@@ -1665,18 +1645,20 @@ hr {
 		.caseblob img {
 			width: 90%;
 		}
-		.feat2 {
-			padding-top: 10rem;
-			margin-left: auto;
-			margin-right: auto;
-			width: 86%;
+		
+		.nto img {
+			display: grid;
+			width: 525px;
 		}
-
 		.feat2 {
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-areas:
       "blob-wrapper1 graphic";
+			margin-left: auto;
+			margin-right: auto;
+			padding-top: 10rem;
+			width: 86%;
     }
 		.graphic button {
 			margin-left: 0;
@@ -1695,10 +1677,6 @@ hr {
 
 		.notsuoh {
 			display: none;
-		}
-
-		.nto img {
-			width: 525px;
 		}
 
 		.intro button {
