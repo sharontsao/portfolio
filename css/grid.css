@@ -1638,7 +1638,7 @@ hr {
 
     .blob-wrapper {
       grid-area: blob-wrapper;
-			padding-bottom: 12rem;
+			padding-bottom: 14rem;
 			display: grid;
     }
 
@@ -1677,7 +1677,7 @@ hr {
 
     .graphic {
       grid-area: graphic;
-			padding-left: 3rem;
+			padding-left: 6rem;
     }
 
 		.notsuoh {
@@ -1859,7 +1859,7 @@ hr {
 		 fill: #FF868D;
 		}
 		.lapt img {
-			max-width: 475px;
+			max-width: 600px;
 			height: auto;
 			position: relative;
 			padding-top: 2rem;
@@ -1931,4 +1931,38 @@ hr {
     font-family: "sofiapro-regular";
    }
 
+	 @media screen and (min-width: 1400px) {
+		 .feat {
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       grid-template-areas:
+       "case blob-wrapper";
+ 			margin-left: auto;
+ 			margin-right: auto;
+ 			width: 78%;
+     }
+
+ 		.nto img {
+ 			display: grid;
+ 			width: 525px;
+ 		}
+ 		.feat2 {
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       grid-template-areas:
+       "blob-wrapper1 graphic";
+ 			margin-left: auto;
+ 			margin-right: auto;
+ 			padding-bottom: 6rem;
+ 			width: 78%;
+     }
+
+		 .lapt img {
+			 width: 675px;
+		 }
+
+		 .graphic {
+ 			padding-left: 6rem;
+     }
+	 }
 }
