@@ -1260,7 +1260,7 @@ hr {
 		margin-left: auto;
 		margin-right: auto;
 		width: 100%;
-		margin-top: 6rem;
+		margin-top: 2rem;
   }
 
   .featured h1, h2, h3 {
@@ -1614,7 +1614,7 @@ hr {
 
     .feat {
       display: grid;
-      grid-template-columns: 1fr 2fr;
+      grid-template-columns: 1fr 1fr;
       grid-template-areas:
       "case blob-wrapper";
 			margin-left: auto;
@@ -1629,6 +1629,7 @@ hr {
 
     .case {
       grid-area: case;
+			/* padding-top: 2rem; */
     }
 
 		.case h2 {
@@ -1637,7 +1638,6 @@ hr {
 
     .blob-wrapper {
       grid-area: blob-wrapper;
-      padding-top: 1rem;
 			padding-bottom: 12rem;
 			display: grid;
     }
@@ -1662,7 +1662,7 @@ hr {
       "blob-wrapper1 graphic";
 			margin-left: auto;
 			margin-right: auto;
-			padding-top: 10rem;
+			padding-bottom: 4rem;
 			width: 86%;
     }
 		.graphic button {
@@ -1677,7 +1677,7 @@ hr {
 
     .graphic {
       grid-area: graphic;
-			padding-left: 8rem;
+			padding-left: 3rem;
     }
 
 		.notsuoh {
@@ -1846,12 +1846,12 @@ hr {
 		}
 
 		.blob1:hover .lapt {
-			transform: translate(2vw, 2vw);
+			transform: translate(1.5vw, 1.5vw);
 		}
 
 		.blob1:hover svg {
 			transition-delay: 0.2s;
-			transform: translate(-2vw, -2vw);
+			transform: translate(-1.5vw, -1.5vw);
 		}
 
 		.blob1:hover svg path {
@@ -1859,9 +1859,10 @@ hr {
 		 fill: #FF868D;
 		}
 		.lapt img {
-			width: 130%;
+			max-width: 425px;
 			height: auto;
-			position: relative;
+			/* position: relative; */
+			padding-top: 2rem;
 		}
 
 		.blob1 svg {
@@ -1874,12 +1875,12 @@ hr {
 		}
 
 		.blob3:hover .nto {
-			transform: translate(-2vw, -2vw);
+			transform: translate(-1.5vw, -1.5vw);
 		}
 
 		.blob3:hover svg {
 			transition-delay: 0.2s;
-			transform: translate(-2vw, 2vw);
+			transform: translate(-1.5vw, 1.5vw);
 		}
 
 		.blob3:hover svg path {
