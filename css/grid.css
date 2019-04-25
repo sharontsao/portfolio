@@ -1859,9 +1859,9 @@ hr {
 		 fill: #FF868D;
 		}
 		.lapt img {
-			max-width: 425px;
+			max-width: 475px;
 			height: auto;
-			/* position: relative; */
+			position: relative;
 			padding-top: 2rem;
 		}
 
