@@ -1685,6 +1685,13 @@ hr {
 			display: none;
 		}
 
+		.ask {
+			margin-left: 50%;
+			transform: translateX(-50%);
+			text-align: center;
+			padding-top: 4rem;
+		}
+
 		.intro button {
 			  display: block;
 			  margin-left: auto;
