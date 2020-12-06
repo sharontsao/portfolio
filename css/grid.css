@@ -1601,7 +1601,7 @@ hr {
     }
 
     .featured h4 {
-      padding: 0 0 6rem 12rem;
+      padding: 0 0 8rem 12rem;
     }
 
     .featured h3{
@@ -1624,26 +1624,30 @@ hr {
 		.feat button {
 			margin-left: 0;
 			width: 100%;
-			max-width: 400px;
+			max-width: 405px;
 		}
 
     .case {
       grid-area: case;
-			padding-top: 4rem;
     }
 
+		.case h1 {
+			width: 405px;
+			line-height: 115%;
+		}
 		.case h2 {
-			width: 500px;
+			width: 405px;
 		}
 
     .blob-wrapper {
       grid-area: blob-wrapper;
-			padding-bottom: 16rem;
+			padding-bottom: 8rem;
+			padding-left: 4rem;
 			display: grid;
     }
 
 		.caseblob img {
-			width: 90%;
+			width: 100%;
 		}
 
 		.blob2 {
@@ -1867,7 +1871,7 @@ hr {
 		 fill: #FF868D;
 		}
 		.lapt img {
-			max-width: 600px;
+			max-width: 625px;
 			height: auto;
 			position: relative;
 			padding-left: 2em;
