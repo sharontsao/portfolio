@@ -1629,14 +1629,14 @@ hr {
 
     .case {
       grid-area: case;
+			padding-bottom: 2em;
     }
 
 		.case h1 {
-			width: 405px;
-			line-height: 115%;
+			max-width: 405px;
 		}
 		.case h2 {
-			width: 405px;
+			max-width: 405px;
 		}
 
     .blob-wrapper {
@@ -1955,7 +1955,11 @@ hr {
  			width: 78%;
      }
 
- 		.nto img {
+		 .case h1 {
+ 			line-height: 115%;
+ 		}
+
+ 		/* .nto img {
  			display: grid;
  			width: 475px;
 			height: auto;
@@ -1977,6 +1981,6 @@ hr {
 
 		 .graphic {
  			padding-left: 6rem;
-     }
+     } */
 	 }
 }
