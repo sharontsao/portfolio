@@ -1958,7 +1958,7 @@ hr {
      }
 
 
- 		/* .nto img {
+ 		.nto img {
  			display: grid;
  			width: 475px;
 			height: auto;
@@ -1980,6 +1980,6 @@ hr {
 
 		 .graphic {
  			padding-left: 6rem;
-     } */
+     }
 	 }
 }
