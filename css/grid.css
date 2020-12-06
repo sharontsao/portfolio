@@ -1632,6 +1632,7 @@ hr {
     .case {
       grid-area: case;
 			padding-bottom: 2em;
+			min-width: 300px;
     }
 
 		.case h1 {
@@ -1644,7 +1645,7 @@ hr {
     .blob-wrapper {
       grid-area: blob-wrapper;
 			padding-bottom: 8rem;
-			padding-left: 4rem;
+			padding-left: 6rem;
 			display: grid;
     }
 
