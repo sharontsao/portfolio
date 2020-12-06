@@ -469,8 +469,9 @@ f {
 }
 
 .featured h1 {
-  padding: 0 0 3rem 0;
+  padding: 0 0 2rem 0;
 	text-shadow: none;
+	line-height: 1.1;
 }
 
 .featured h3 {
@@ -485,7 +486,7 @@ f {
 .blob img{
 	width: 100%;
 	max-width: 575px;
-	padding-bottom: 4rem;
+	padding-bottom: 5rem;
 }
 
 .blob-wrapper {
@@ -530,7 +531,7 @@ button {
 }
 
 .featured button {
-  margin: 3rem 0 6rem 0;
+  margin: 2rem 0 2rem 0;
 }
 
 .intro {
@@ -1955,9 +1956,6 @@ hr {
  			width: 78%;
      }
 
-		 .case h1 {
- 			line-height: 115%;
- 		}
 
  		/* .nto img {
  			display: grid;
