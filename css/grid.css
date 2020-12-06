@@ -485,8 +485,9 @@ f {
 
 .blob img{
 	width: 100%;
-	max-width: 575px;
+	max-width: 600px;
 	padding-bottom: 5rem;
+	padding-top: 1rem;
 }
 
 .blob-wrapper {
@@ -1260,7 +1261,7 @@ hr {
     display: block;
 		margin-left: auto;
 		margin-right: auto;
-		width: 100%;
+		width: 95%;
 		margin-top: 2rem;
   }
 
@@ -1331,7 +1332,7 @@ hr {
 	 }
 
 	 .feat button {
-		 width: 60%;
+		 width: 100%;
 	 }
 
 	.overview {
@@ -1620,7 +1621,7 @@ hr {
       "case blob-wrapper";
 			margin-left: auto;
 			margin-right: auto;
-			width: 88%;
+			width: 80%;
     }
 		.feat button {
 			margin-left: 0;
