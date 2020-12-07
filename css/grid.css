@@ -1106,6 +1106,24 @@ hr {
 	background-size: 2px 7px;
 	}
 
+	.thedesigner a {
+		background:
+		linear-gradient(
+		  to bottom, var(--mainColor) 0%,
+		  var(--mainColor) 100%
+		);
+		background-position: 0 100%;
+		background-repeat: repeat-x;
+		padding: 0 0 0.3rem 0;
+		background-size: 1px 1.5px;
+		color: #474747;
+		text-decoration: none;
+		transition: background-size .2s;
+		}
+
+		.thedesigner a:hover {
+		background-size: 2px 7px;
+		}
 
 .theartist img {
   display: block;
