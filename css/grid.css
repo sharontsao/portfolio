@@ -512,6 +512,8 @@ button {
   cursor: pointer;
 }
 
+
+
 	button:hover {
   background-color: #D1000E;
   color: white;
@@ -532,8 +534,12 @@ button {
 }
 
 .featured button {
-  margin: 2rem 0 2rem 0;
+  margin: 2rem 0 .5rem 0;
 }
+
+	.mobilebutton button{
+		margin: 0.75rem 0 0.75rem 0;
+	}
 
 .intro {
   border-bottom-left-radius: 50% 4%;
